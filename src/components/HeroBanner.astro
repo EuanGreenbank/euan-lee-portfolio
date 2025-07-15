@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets"
+import heroBackgroundImage from "../assets/bg_z-5.jpg"
+---
+
+<div class="relative size-full max-h-[66dvh]">
+	<Image
+		src={heroBackgroundImage}
+		alt="A scenic background image"
+		class="absolute inset-0 h-full w-full object-cover opacity-50 saturate-50"
+		fit="cover"
+		loading="eager"
+	/>
+	<div class="relative container space-y-10 py-20">
+		<hgroup class="space-y-10">
+			<h1 class="font-display text-4xl font-black">Euan Lee</h1>
+			<p
+				class="font-display inline-block bg-black px-3 py-1 text-8xl font-black text-white uppercase"
+			>
+				Hey!
+			</p>
+		</hgroup>
+		<p class="max-w-prose text-xl">
+			<strong>Welcome to my website!</strong> Here you’ll find all the cool things
+			I create, mainly using Source Filmmaker – an animation tool developed by Valve.
+			I use SFM to make animations, art, and posters, and I also enjoy creating digital
+			artwork from time to time. Have a look around and enjoy!
+		</p>
+	</div>
+</div>

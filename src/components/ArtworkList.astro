@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets"
+
+import gmanAlyxFlyImage from "../assets/gman_alyx_fly.png"
+import dontKnowImEngiImage from "../assets/dont_know_im_engi.png"
+import tf2DanceImage from "../assets/tf2_dance.png"
+import ozymandiasImage from "../assets/ozymandias.png"
+---
+
+<div class="container py-10">
+	<h2 class="font-display mb-10 text-2xl font-black">Artwork</h2>
+	<div class="grid grid-cols-6 gap-5">
+		<div class="col-span-4 flex flex-col gap-5">
+			<Image src={gmanAlyxFlyImage} alt="Gman Alyx Fly" class="w-full" />
+			<Image
+				src={dontKnowImEngiImage}
+				alt="Don't Know I'm Engi"
+				class="w-full"
+			/>
+		</div>
+		<div class="col-span-2 flex flex-col gap-5">
+			<Image src={tf2DanceImage} alt="TF2 Dance" class="w-full" />
+			<Image src={ozymandiasImage} alt="Ozymandias" class="w-full" />
+		</div>
+	</div>
+</div>
