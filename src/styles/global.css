@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/space-grotesk";
+
+@theme {
+	/* Fonts */
+	--font-sans: "Space Grotesk Variable", sans-serif;
+	--font-display: "Inter Variable", sans-serif;
+}
